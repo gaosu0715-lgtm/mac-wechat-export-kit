@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mac-wechat-export-kit"
+version = "0.2.0"
+description = "Interactive local bootstrap, bounded raw-key capture, recovery and scoped export"
+requires-python = ">=3.9"
+license = {file = "LICENSE"}
+readme = "README.md"
+dependencies = []
+
+[project.optional-dependencies]
+compressed = ["zstandard>=0.22,<1"]
+
+[project.scripts]
+mac-wechat-export = "mac_wechat_export_kit.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]

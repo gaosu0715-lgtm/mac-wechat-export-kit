@@ -1,0 +1,27 @@
+mac-wechat-export-kit
+
+SQLCipher adapter portions derive from:
+  Author/account: acmerfight
+  Gist: https://gist.github.com/acmerfight/0a01249ef72970d07a2603dbb629e80f
+  Pinned revision: c98dbb10cf23c30e83d5d744905101b0880887a0
+  Files: sqlcipher_probe.py (C API adapter portions), capture_keys.py (raw-key
+         page authentication / bounded candidate verification portions)
+  Copyright (c) 2026 Contributors
+  License: MIT (full original text in docs/licenses/upstream-MIT.md)
+
+Changes include explicit library path and digest checks, private fixed-scope key
+manifest, suppressed native diagnostics, removed CLI self-test/discovery helpers,
+and stable errors. Runtime capture and bootstrap were adapted from the reviewed
+successful private workflow, not copied wholesale from the public wrappers.
+The public wrappers' recursive account/database discovery, deep signing,
+force-kill cleanup and raw error output are not included. No UI-send or media
+pipeline implementation is included.
+
+Content/rendering behavior was adapted from individually reviewed private work
+created for this export workflow. Personal identifiers, local paths and run state
+were removed. That code is not claimed to be verbatim upstream or a clean-room
+implementation. Per-file review and hashes are documented in docs/SOURCES.md.
+
+This project is not affiliated with or endorsed by Tencent, WeChat, WeFlow,
+SQLCipher/Zetetic, GitHub, or the upstream author. Names identify compatibility
+or provenance. Third-party runtime binaries are not distributed here.

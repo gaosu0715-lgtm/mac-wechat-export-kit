@@ -1,0 +1,10 @@
+{
+  "db_root": "<absolute-canonical-db-storage-directory>",
+  "key_file": "<absolute-private-keys-json>",
+  "sqlcipher_library": "<absolute-reviewed-sqlcipher-4-library>",
+  "library_sha256": "<64-lowercase-hex-digest-of-that-library>",
+  "contact_name": "<exact-nickname-or-remark>",
+  "expected_username": "<explicitly-confirmed-contact-internal-id>",
+  "self_username": "<explicitly-confirmed-self-internal-id>",
+  "timezone": "UTC"
+}

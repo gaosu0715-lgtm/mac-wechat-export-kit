@@ -1,0 +1,11 @@
+{
+  "app_path": "/Applications/WeChat.app",
+  "db_root": "<absolute-current-user-selected-db-storage-directory>",
+  "state_dir": "<absolute-new-private-session-directory>",
+  "sqlcipher_library": "<absolute-reviewed-sqlcipher-4-library>",
+  "library_sha256": "<64-lowercase-hex-digest-of-that-library>",
+  "contact_name": "<exact-nickname-or-remark>",
+  "expected_username": "",
+  "self_username": "",
+  "timezone": "UTC"
+}
